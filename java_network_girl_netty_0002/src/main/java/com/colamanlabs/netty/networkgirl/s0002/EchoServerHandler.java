@@ -17,6 +17,8 @@ import lombok.extern.slf4j.Slf4j;
  * DiscardServer 와의 차이점
  * 1. DiscardServer 는 SimpleChannelInboundHandler 를 상속받았고, EchoServerHandler 는 ChannelInboundHandlerAdapter 를 상속받았다.
  * 
+ * 2. SimpleChannelInboundHandler 는 ChannelInboundHandlerAdapter 를 상속받았다.
+ * 
  */
 @Slf4j
 public class EchoServerHandler extends ChannelInboundHandlerAdapter
