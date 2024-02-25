@@ -21,6 +21,9 @@ public class JavaNetworkGirlNetty0007Application
     public void init() throws Exception
     {
         log.info(String.format("[JavaNetworkGirlNetty0007Application/init] BEGIN"));
+        
+        EchoServerWithFuture server = new EchoServerWithFuture();
+        server.main(null);
         log.info(String.format("[JavaNetworkGirlNetty0007Application/init] END"));
     }
     
